@@ -1,0 +1,239 @@
+@import url("../wooshoplite/style.css");
+/*  
+Theme Name: bhpopcorn
+Description: WooShopLite child for Bar Harbor Popcorn
+Author: LSpeight, Reach Maine
+Author URI: http://www.reachmaine.com
+License: GNU General Public License
+License URI: license.txt
+Template: WooShop Lite
+*/
+/********** _settings begin ******************************/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+@font-face {
+  font-family: 'PointedlyMad';
+  src: url("PointedlyMad.eot");
+  /* EOT file for IE */ }
+
+@font-face {
+  font-family: 'PointedlyMad';
+  src: url("PointedlyMad.ttf");
+  /* TTF file for CSS3 browsers */ }
+
+font {
+  font-family: Tahoma, Geneva, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "VollkornRegular", Geneva, serif !important;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  color: #603913 !important;
+  padding: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  letter-spacing: -2px; }
+
+h1, .h1 {
+  font-weight: normal;
+  line-height: 40px;
+  padding: 15px 0px; }
+
+h2, .h2 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -1px; }
+
+h3, .h3 {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.5px; }
+
+h4, .h4 {
+  letter-spacing: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px; }
+
+h5, .h5 {
+  letter-spacing: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; }
+
+h6, .h6 {
+  letter-spacing: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+
+.flex-caption h1 {
+  color: white !important; }
+
+h2.widget-title, h2.widget-title span, #content #search h1.posttitle,
+#content #searchresult .posttitle, #content #searchresult .posttitle a {
+  font-size: 24px;
+  line-height: 27px;
+  letter-spacing: 0px; }
+
+p {
+  margin-top: 5px;
+  font-family: "VollkornRegular", Geneva, sans-serif !important;
+  font-size: 14px;
+  line-height: 18px; }
+
+a, a:visited,
+.colortext,
+.colortext a,
+.colortext a:visited {
+  color: #fe0000 !important; }
+
+#payment ul.payment_methods li label {
+  color: #0088d0 !important; }
+
+#maincontent #content #order_review #payment .place-order #place_order.button.alt,
+#outermain #maincontent #content div.padcontent form button.button,
+#outermain #maincontent input[type="submit"] {
+  background: #0088d0 !important;
+  background: linear-gradient(to bottom, #0088d0 0%, #0092ed 100%) !important; }
+
+div.product-detail div.woocommerce-message a.button {
+  background-image: linear-gradient(to bottom, #0088d0 0%, #0092ed 100%) !important; }
+
+#payment .place-order #place_order,
+.woocommerce a.alt.button,
+.woocommerce .return-to-shop a.button,
+.woocommerce button.alt.button,
+.woocommerce input.alt.button,
+.woocommerce #respond input.alt#submit,
+.woocommerce #content input.alt.button,
+.woocommerce-page a.alt.button,
+.woocommerce-page button.alt.button,
+.woocommerce-page input.alt.button,
+.woocommerce-page #respond input.alt#submit,
+.woocommerce-page #content input.alt.button {
+  background: #0088d0 !important;
+  border-color: #0088d0 !important; }
+
+/* main menu font stuff *****/
+#nav-wrap #topnav .menu-item a {
+  font-family: PointedlyMad, Georgia, serif;
+  font-size: 44px;
+  line-height: 48px;
+  color: #fe0000 !important; }
+
+/********** _settings end ******************************/
+/* =Theme customization starts here */
+/********** master begin ******************************/
+p.demo_store {
+  background-color: #0091ea !important; }
+
+#searchform {
+  float: right;
+  margin-top: 110px;
+  margin-right: 45px; }
+  #searchform .bgsearch #s {
+    background: url(images/menu-background.jpg) !important; }
+
+#top #logo {
+  height: inherit; }
+#top #chart {
+  margin-top: 35px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid red; }
+  #top #chart p {
+    margin-bottom: 0px; }
+
+#outerslider .flex-control-paging li {
+  width: 11px; }
+  #outerslider .flex-control-paging li a {
+    background-color: #e9e5dc; }
+
+#outerslider .flex-control-paging li a.flex-active {
+  background-color: #552c14 !important; }
+
+#navigation {
+  height: inherit !important;
+  background: url(images/menu-background.jpg) !important; }
+  #navigation #nav-wrap #topnav {
+    width: 100%; }
+    #navigation #nav-wrap #topnav .menu-item {
+      width: 25%;
+      text-align: center; }
+      #navigation #nav-wrap #topnav .menu-item a {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important; }
+    #navigation #nav-wrap #topnav .menu-item:hover {
+      background: url(images/menu-hover.jpg) !important; }
+  #navigation #nav-wrap .sf-menu > li,
+  #navigation #nav-wrap #nav-wrap #topnav.sf-menu > li:before {
+    border-right: 0px; }
+
+#sidebar ul.bhpc-list {
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: bold; }
+  #sidebar ul.bhpc-list li {
+    border-bottom: 0px;
+    list-style: disc;
+    list-style-position: inside;
+    color: #C70707; }
+
+#outerfootersidebar {
+  background: #e9e5dc !important;
+  padding-top: 12px !important; }
+  #outerfootersidebar li.widget-container {
+    margin-bottom: 20px; }
+
+#outerfooter {
+  background-color: #472b10 !important; }
+  #outerfooter #footer a {
+    color: white !important; }
+
+@media screen and (max-width: 860px) {
+  #slider .flex-caption {
+    height: 25%; }
+    #slider .flex-caption h1 {
+      letter-spacing: normal; } }
+/********** master end ******************************/
+/* this is last s.t. over-rights above */
+/************* media related styling for skeleton responsive grid *****************/
+/**** default sizing.  Put things here ONLY for default sizing */
+@media only screen and (min-width: 960px) {
+  body {
+    background-repeat: no-repeat !important; }
+    body #bodychild {
+      border-color: #e7d2a2;
+      border-style: solid;
+      border-width: 2px 2px 0px 2px; }
+    body #outerfooter {
+      margin-left: -2px;
+      padding-right: 4px; } }
+/* Table (portrait)  (min-width: 768px) and (max-width: 959px) width: 768  */
+/* MEDIUM/BIG size */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #outerheader #logoimg img {
+    width: 748px; }
+
+  #outerslider .container #slidercontainer {
+    margin-left: 0px;
+    margin-right: 0px; } }
+/* #Mobile (Portrait)   width: 300px; */
+/* SMALLEST SIZE - mobile default, modified below for mobile landscape */
+@media only screen and (max-width: 767px) {
+  #outerheader #chart {
+    margin-top: 115px; } }
+/* #Mobile (Landscape)  (min-width: 480px) and (max-width: 767px) width: 480px   */
+/* *MEDIUM/SMALL SIZE */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #outerheader #logoimg img {
+    width: 420px; }
+  #outerheader #chart {
+    margin-top: 0px; }
+  #outerheader #searchform {
+    margin-top: 15px;
+    margin-right: 0px; }
+  #outerheader #navigation {
+    margin-top: 15px; } }
+/********** end media  ******************************/

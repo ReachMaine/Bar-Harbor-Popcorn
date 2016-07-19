@@ -1,0 +1,67 @@
+/************* media related styling for skeleton responsive grid *****************/
+/**** default sizing.  Put things here ONLY for default sizing */
+@media only screen and (min-width: 960px) {
+	body {
+		background-repeat: no-repeat!important;
+		#bodychild {
+			border-color: $sitebordercolor;
+			border-style: solid;
+			border-width: 2px 2px 0px 2px;
+		}
+
+		#outerfooter {
+			margin-left: -2px; // cover over border of body child;
+			padding-right: 4px;
+		}
+	}
+}
+/* Table (portrait)  (min-width: 768px) and (max-width: 959px) width: 768  */
+/* MEDIUM/BIG size */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+
+	#outerheader {
+		#logoimg img {
+			width: 748px;
+		}
+	}
+	#outerslider .container #slidercontainer {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+/* #Mobile (Portrait)   width: 300px; */
+/* SMALLEST SIZE - mobile default, modified below for mobile landscape */
+@media only screen and (max-width: 767px)  {
+	// adjust logo image & shopping cart.
+	#outerheader  {
+		
+
+		#chart {
+			margin-top: 115px;
+		}
+		
+		//width: 100%!important;
+	}
+}
+
+/* #Mobile (Landscape)  (min-width: 480px) and (max-width: 767px) width: 480px   */
+/* *MEDIUM/SMALL SIZE */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#outerheader {
+		#logoimg img {
+			width: 420px;
+		}
+		#chart {
+			margin-top: 0px;
+		}
+		#searchform {
+			margin-top: 15px;
+			margin-right: 0px;
+		}
+		#navigation {
+			margin-top: 15px;
+		}
+	}
+}
+
+/********** end media  ******************************/

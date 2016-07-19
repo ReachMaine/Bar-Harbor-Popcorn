@@ -1,0 +1,121 @@
+/*  
+Theme Name: bhpopcorn
+Description: WooShopLite child for Bar Harbor Popcorn
+Author: LSpeight, Reach Maine
+Author URI: http://www.reachmaine.com
+License: GNU General Public License
+License URI: license.txt
+Template: wooshoplite
+*/
+@import url("../wooshoplite/style.css");
+@import "partials/settings";
+//@import "partials/functions"; 
+ 
+/* =Theme customization starts here */
+/********** master begin ******************************/
+p.demo_store {
+	background-color: $topbarcolor!important;
+}
+#searchform {
+	float: right;
+	margin-top: 110px;
+	margin-right: 45px;
+	.bgsearch #s {
+		background: url(images/menu-background.jpg)!important;
+	}
+}
+#top {
+	#logo {
+		height: inherit;
+	}
+	#chart {
+		margin-top: 35px;
+		background-color: white;
+		padding: 20px;
+		border: 1px solid red;
+		p {
+			margin-bottom: 0px;
+		}
+	}
+}
+// ******** slide show ********
+#outerslider .flex-control-paging li {
+	width: 11px;
+	a {
+		background-color: $medgrey;
+	}
+}
+#outerslider .flex-control-paging li a.flex-active
+{
+	background-color: $dkBrownFontColor!important;
+}
+// ******** navigation *******
+#navigation {
+
+	height: inherit!important;
+	
+	//background: linear-gradient(to bottom,  #bcbcbc 0%,#cecece 50%,#dddddd 100%); /* W3C */
+	background: url(images/menu-background.jpg)!important;
+	#nav-wrap {
+		#topnav {
+			width: 100%;
+			.menu-item {
+
+				width: 25%;
+				text-align: center;
+				a {
+					padding-top: 0px!important;
+					padding-bottom: 0px!important;
+				}
+			}
+			.menu-item:hover {
+				background: url(images/menu-hover.jpg)!important;
+			}
+		}
+		.sf-menu > li,
+		#nav-wrap #topnav.sf-menu > li:before {
+			border-right: 0px;
+		}
+	}
+}
+#sidebar ul.bhpc-list {
+	padding-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	li {
+		border-bottom: 0px;
+		list-style: disc;
+		list-style-position: inside;
+		color:#C70707;
+	}
+}
+#outerfootersidebar {
+	background: $medgrey!important;
+	padding-top: 12px!important;
+	li.widget-container {
+		margin-bottom: 20px;
+	}
+}
+#outerfooter {
+	background-color: $footercolor!important;
+	#footer {
+		a {
+			color: white!important;
+		}
+	}
+}
+
+@media screen and (max-width: 860px) {
+	#slider .flex-caption {
+		height: 25%;
+		h1 {
+			letter-spacing: normal;
+		}
+		
+	}
+}
+
+/********** master end ******************************/
+/* this is last s.t. over-rights above */
+@import "partials/media_skeleton";
+
