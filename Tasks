@@ -1,0 +1,29 @@
+Tasks.
+
+Store Hours are in widget Footer2 Sidebar
+
+Spring (and reverse in fall)
+--------------------------------
+ - change top blue bar:
+    Woocommerce -> settings-> general -> Store Notice Text
+      usually something like "Now Open for the 2016 Season!" or
+      "Now Closed for hte 2016 Season.";
+
+- change red banner on home page.
+  in-season:  Open seven days a week!!!
+  end of season:  Closing for season saturday,
+  off-season:  See you in the spring.
+
+- change store hours in Footer2 widget area.
+  in season usually
+      <h3 align=\"center\">Popping 7 Days a Week!</h3>
+      <p align=\"center\">11 am to 5:00 pm, daily</p>
+
+- enable manage inventory
+    Woocommerce -> settings -> products -> inventory -> manage inventory checkbox.
+
+- change all products to not in stock (quick edit)
+
+- remove template file for woocommerce/single-product/add-to-cart/variation-add-to-cart-button.php
+  this hides the add to cart button and the number of items input field.
+  there must be a better way to do this, but I havent found it yet.

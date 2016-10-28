@@ -7,11 +7,11 @@
 	/* add favicons for admin */
 	add_action('login_head', 'add_favicon');
 	add_action('admin_head', 'add_favicon');
-	
+
 	function add_favicon() {
 		$favicon_url = get_stylesheet_directory_uri() . '/images/admin-favicon.ico';
 		echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
-	} 
+	}
 	/***** end admin favicon *****/
 
 		/*****  change the login screen logo ****/
@@ -51,8 +51,11 @@
 		add_filter( 'gettext', 'zig_woo_text', 20, 3 );
 	}
 
-	//add_filter('woocommerce_is_purchasable', 'my_woocommerce_is_purchasable', 10, 2);
-		function my_woocommerce_is_purchasable($is_purchasable, $product) {
-				return ($product->id == whatever_mambo_jambo_id_you_want ? false : $is_purchasable);
-		}
+	/* this removes everything including our "Popping again in spring" text (Out of Stock) text
+	remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
+	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 ); */
+
+
+		// remove add to cart Button  - by making products unpurchasable.
+	//	add_filter( 'woocommerce_is_purchasable', false );
 ?>
