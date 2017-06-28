@@ -1,0 +1,9 @@
+/* styling for woocommerce */
+// product title in shortcode (popcorn page) and shop
+
+#content .woocommerce ul.products li.product .woocommerce-loop-product__title,
+#dessky-display-products  ul.products li.product .woocommerce-loop-product__title,
+ {
+  font-size: 2em;
+}
+/* end woo styling */

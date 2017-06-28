@@ -1,4 +1,4 @@
-/*  
+/*
 Theme Name: bhpopcorn
 Description: WooShopLite child for Bar Harbor Popcorn
 Author: LSpeight, Reach Maine
@@ -9,8 +9,9 @@ Template: wooshoplite
 */
 @import url("../wooshoplite/style.css");
 @import "partials/settings";
-//@import "partials/functions"; 
- 
+@import "partials/woo";
+//@import "partials/functions";
+
 /* =Theme customization starts here */
 /********** master begin ******************************/
 p.demo_store {
@@ -53,7 +54,7 @@ p.demo_store {
 #navigation {
 
 	height: inherit!important;
-	
+
 	//background: linear-gradient(to bottom,  #bcbcbc 0%,#cecece 50%,#dddddd 100%); /* W3C */
 	background: url(images/menu-background.jpg)!important;
 	#nav-wrap {
@@ -111,11 +112,10 @@ p.demo_store {
 		h1 {
 			letter-spacing: normal;
 		}
-		
+
 	}
 }
 
 /********** master end ******************************/
 /* this is last s.t. over-rights above */
 @import "partials/media_skeleton";
-
