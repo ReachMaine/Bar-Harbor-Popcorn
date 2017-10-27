@@ -57,5 +57,5 @@
 
 
 		// remove add to cart Button  - by making products unpurchasable.
-	//	add_filter( 'woocommerce_is_purchasable', false );
+		//add_filter( 'woocommerce_is_purchasable', false ); // this doesnt work anymore.
 ?>
