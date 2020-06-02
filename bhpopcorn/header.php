@@ -32,7 +32,7 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
-<?php 
+<?php
 $favicon = of_get_option('dessky_favicon');
 if($favicon =="" ){
 ?>
@@ -67,7 +67,7 @@ wp_head();
 
 <div id="bodychild">
 	<div id="outercontainer">
-    
+
         <!-- HEADER -->
         <div id="outerheader">
         	<div class="container">
@@ -76,7 +76,7 @@ wp_head();
                 <div id="headerright" class="six columns omega">
                 <?php global $woocommerce; ?>
                 	<div id="chart">
-                    	<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" id="shopping-cart"></a>
+                    	<a href="<?php echo wc_get_cart_url(); ?>" id="shopping-cart"></a>
                     	<h6><?php _e('Shopping Cart', 'dessky'); ?></h6>
                         <p>You have <?php /* display items number */ echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?></p>
                     </div>
@@ -89,31 +89,31 @@ wp_head();
                         </div>
                     </form>
                      <div class="clear"></div>
-          					 <?php /* zig: removed 'user-nav'  
+          					 <?php /* zig: removed 'user-nav'
                        wp_nav_menu( array(
-          					  'container'       => 'ul', 
-          					  'menu_id'         => 'user-nav', 
+          					  'container'       => 'ul',
+          					  'menu_id'         => 'user-nav',
           					  'depth'           => 0,
           					  'sort_column'    => 'menu_order',
           					  'fallback_cb'     => 'nav_user_fallback',
-          					  'theme_location' => 'topmenu' 
-          					  )); 
-          					*/ ?> 
+          					  'theme_location' => 'topmenu'
+          					  ));
+          					*/ ?>
                 </div> <!-- end of headerright -->
                 <section id="navigation" class="twelve columns">
                     <nav id="nav-wrap">
 						<?php wp_nav_menu( array(
-                          'container'       => 'ul', 
+                          'container'       => 'ul',
                           'menu_class'      => 'sf-menu',
-                          'menu_id'         => 'topnav', 
+                          'menu_id'         => 'topnav',
                           'depth'           => 0,
                           'sort_column'    => 'menu_order',
                           'fallback_cb'     => 'nav_page_fallback',
-                          'theme_location' => 'mainmenu' 
-                          )); 
+                          'theme_location' => 'mainmenu'
+                          ));
                         ?>
-                    </nav><!-- nav -->	
-                  <?php /* zig: move search box to headerright 
+                    </nav><!-- nav -->
+                  <?php /* zig: move search box to headerright
                     <form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <div class="bgsearch">
                     	<input type="text" name="s" id="s" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" value="Search" />
@@ -128,5 +128,3 @@ wp_head();
             </div>
         </div>
         <!-- END HEADER -->
-        
-
