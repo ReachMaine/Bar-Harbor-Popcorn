@@ -40,9 +40,10 @@
 	if ( !function_exists('zig_woo_text') ){
 		function zig_woo_text( $translated_text, $text, $domain ) {
 			$theme_text_domain = 'woocommerce';
+			// 'Product Unavailable - Popping again in Spring.',
 		    switch ( $translated_text ) {
 	            case 'Out of stock' :
-	                $translated_text = __( 'Product Unavailable - Popping again in Spring.', $theme_text_domain);
+	                $translated_text = __( 'Product Unavailable', $theme_text_domain);
 	                break;
 	        }
 
