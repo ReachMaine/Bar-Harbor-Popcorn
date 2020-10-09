@@ -43,7 +43,7 @@
 			// 'Product Unavailable - Popping again in Spring.',
 		    switch ( $translated_text ) {
 	            case 'Out of stock' :
-	                $translated_text = __( 'Product Unavailable', $theme_text_domain);
+	                $translated_text = __( 'Product Unavailable - Popping again in Spring.', $theme_text_domain);
 	                break;
 	        }
 
